@@ -1565,6 +1565,9 @@ YOUTUBE = {
 
 YOUTUBE_API_KEY = 'PUT_YOUR_API_KEY_HERE'
 
+# Additional languages that should be supported for video transcripts, not included in ALL_LANGUAGES
+EXTENDED_VIDEO_TRANSCRIPT_LANGUAGES = []
+
 ############################# SETTINGS FOR VIDEO UPLOAD PIPELINE #############################
 
 VIDEO_UPLOAD_PIPELINE = {

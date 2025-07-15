@@ -964,11 +964,11 @@ XBLOCK_MIXINS = (
     #  (b) refactor their functionality out of the Blocklike objects and into the edx-platform block runtimes.
     LmsBlockMixin,
     InheritanceMixin,
+    ResourceTemplates,
     XModuleMixin,
     EditInfoMixin,
     AuthoringMixin,
     UpstreamSyncMixin,
-    ResourceTemplates,
 )
 
 # .. setting_name: XBLOCK_EXTRA_MIXINS

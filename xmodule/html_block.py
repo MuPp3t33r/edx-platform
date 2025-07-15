@@ -26,7 +26,6 @@ from xmodule.stringify import stringify_children
 from xmodule.util.builtin_assets import add_webpack_js_to_fragment, add_css_to_fragment
 from xmodule.util.misc import escape_html_characters
 from xmodule.x_module import (
-    ResourceTemplates,
     shim_xmodule_js,
     XModuleMixin,
     XModuleToXBlockMixin,
@@ -45,7 +44,7 @@ _ = lambda text: text
 @XBlock.needs("user")
 class HtmlBlockMixin(  # lint-amnesty, pylint: disable=abstract-method
     XmlMixin, EditingMixin,
-    XModuleToXBlockMixin, ResourceTemplates, XModuleMixin,
+    XModuleToXBlockMixin, XModuleMixin,
 ):
     """
     The HTML XBlock mixin.

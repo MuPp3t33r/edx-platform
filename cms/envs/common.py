@@ -150,6 +150,7 @@ from lms.djangoapps.lms_xblock.mixin import LmsBlockMixin
 from cms.lib.xblock.authoring_mixin import AuthoringMixin
 from cms.lib.xblock.upstream_sync import UpstreamSyncMixin
 from xmodule.modulestore.edit_info import EditInfoMixin
+from xmodule.x_module import ResourceTemplates
 from openedx.core.djangoapps.theming.helpers_dirs import (
     get_themes_unchecked,
     get_theme_base_dirs_from_settings
@@ -967,6 +968,7 @@ XBLOCK_MIXINS = (
     EditInfoMixin,
     AuthoringMixin,
     UpstreamSyncMixin,
+    ResourceTemplates,
 )
 
 # .. setting_name: XBLOCK_EXTRA_MIXINS
